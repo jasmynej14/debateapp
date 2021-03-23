@@ -2,16 +2,16 @@
     <StackLayout class="post">
         <Label class="title" :text="title"/>
         <Label class="user" :text="author"/>
-      
+        
     </StackLayout>
 </template>
 
 <script>
- import posts from '../data/posts.json'
- import users from '../data/users.json'
+
 export default {
     data(){
         return{
+            videoContent: "<video width=\"300\" height=\"200\" controls><source src= \"src/doit_clipped.mp4\" type=\"video/mp4\"/></video>"
         }
        
     },
@@ -21,14 +21,7 @@ export default {
         author: String
     },
     methods:{
-        getTitle(){
-            const id = Math.floor(Math.random() * 100) - 1
-            return posts[id]["title"]
-        },
-        getName(){
-            const id = Math.floor(Math.random() * 50) - 1
-            return users[id]["name"]
-        }
+        
     }
 }
 </script>

@@ -1,36 +1,35 @@
 <template>
     <Page class="main-screen">
     
-       <AbsoluteLayout>
-          <Label class="title" left="40" top="25" text="Make Your Point"/>
-          <component
-	          v-for="component in componentsArray"
-	          v-show="component === currentComponent"
-	          :is="component"
-            :key="component"
-	          left="10"
-            top="100"
-            />
-          <Button class="nav-button" @tap="currentComponent= 'Feed'" left="10" top="700" text="Feed"/>
-          <Button class="nav-button" @tap="currentComponent= 'Profile'" left="100" top="700" text="Profile"/>
-          
-       </AbsoluteLayout>
+       <TabView>
+          <TabViewItem title="Feed">
+             <StackLayout>
+              <Label text="Your Feed" class="title"/>  
+                <Feed />           
+             </StackLayout>
+          </TabViewItem>
+          <TabViewItem title="Profile">
+            <Label text="Profile" class="title"/>
+             
+          </TabViewItem>
+       </TabView>
     </Page>
 </template>
 
 <script >
+  
   import Feed from './Feed'
-  import Profile from './Profile'
+  import FeedItem from './FeedItem';
   export default {
     data() {
 
       return {
         currentComponent: 'Feed',
-        componentsArray: ['Feed','Profile']
+        componentsArray: ['Feed']
       }
     },
     components: {
-       Feed,Profile
+       Feed, FeedItem
     }
   }
 </script>
@@ -38,14 +37,15 @@
 <style scoped>
   
    .main-screen{
-    background-color: aliceblue;
+    background-color: rgb(236, 230, 138);
    }
   .nav-button{
-    background-color: rgb(115, 133, 92);
+    background-color: rgb(133, 111, 92);
     color:whitesmoke;
   }
    .title{
     color:black;
+    text-align: center;
     font-size:45px;
     
    }
