@@ -1,5 +1,5 @@
 <template>
-    <ListView for="item in feed_items" class="list">
+    <ListView for="item in feed_items" @itemTap="click()" class="list">
         <v-template>
             <FeedItem title="Title" author="Author"/>
         </v-template>
