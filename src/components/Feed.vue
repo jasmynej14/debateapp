@@ -1,8 +1,9 @@
 <template>
-    <ScrollView>
-        
-        <FeedItem :title="post_title" :author="poster"/>
-    </ScrollView>
+    <ListView for="item in feed_items" class="list">
+        <v-template>
+            <FeedItem title="Title" author="Author"/>
+        </v-template>
+    </ListView>
     
 </template>
 
@@ -15,7 +16,7 @@ export default {
         return {
             post_title: "Post",
             poster: 'Name',
-            feed_items: this.genFeed()
+            feed_items: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
         }
     },
     components:{

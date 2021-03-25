@@ -2,7 +2,7 @@
     <StackLayout class="post">
         <Label class="title" :text="title"/>
         <Label class="user" :text="author"/>
-        
+        <Image src="https://image.shutterstock.com/image-vector/young-politician-male-female-speakers-260nw-1551587897.jpg" stretch="none"/>
     </StackLayout>
 </template>
 
@@ -29,11 +29,11 @@ export default {
 <style scoped>
     .title{
         font-size: 35px;
-        color:black;
+        color:rgb(231, 107, 107);
     }
     .user{
         font-size: 20px;
-        color:black;
+        color:rgb(74, 72, 228);
     }
     .post{
         background-color: cornsilk;

@@ -1,12 +1,9 @@
 <template>
     <Page class="main-screen">
-    
+      <ActionBar title="Debate"/>
        <TabView>
           <TabViewItem title="Feed">
-             <StackLayout>
-              <Label text="Your Feed" class="title"/>  
-                <Feed />           
-             </StackLayout>
+             <Feed />
           </TabViewItem>
           <TabViewItem title="Profile">
             <Label text="Profile" class="title"/>
