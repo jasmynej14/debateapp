@@ -1,8 +1,8 @@
 <template>
     <StackLayout class="post">
-        <Label class="title" :text="title"/>
-        <Label class="user" :text="author"/>
-        <Image src="https://image.shutterstock.com/image-vector/young-politician-male-female-speakers-260nw-1551587897.jpg" stretch="none"/>
+        <Label class="title h1" :text="title"/>
+        <Label class="title h2" :text="author"/>
+        <VideoPlayer ref="player" src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" autoplay="true" height="300"></VideoPlayer>
     </StackLayout>
 </template>
 
@@ -11,7 +11,8 @@
 export default {
     data(){
         return{
-            videoContent: "<video width=\"300\" height=\"200\" controls><source src= \"src/doit_clipped.mp4\" type=\"video/mp4\"/></video>"
+            videoContent: "<video width=\"300\" height=\"200\" controls><source src= \"src/doit_clipped.mp4\" type=\"video/mp4\"/></video>",
+            video: "doit_clipped.mp4"
         }
        
     },
@@ -28,8 +29,8 @@ export default {
 
 <style scoped>
     .title{
-        font-size: 35px;
-        color:rgb(231, 107, 107);
+       
+        color:rgb(0, 0, 0);
     }
     .user{
         font-size: 20px;

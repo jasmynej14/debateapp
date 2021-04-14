@@ -1,3 +1,4 @@
-Page{
-    background-color: azure;
-}
+@import '../node_modules/nativescript-theme-core/css/core.css';
+@import 'custom.css';
+
+
