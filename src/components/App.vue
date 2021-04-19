@@ -6,7 +6,7 @@
              <Feed />
           </TabViewItem>
           <TabViewItem title="Profile">
-            <Label text="Profile" class="title"/>
+           <Profile/>
              
           </TabViewItem>
        </TabView>
@@ -16,6 +16,7 @@
 <script >
   
   import Feed from './Feed'
+  import Profile from './Profile'
   import FeedItem from './FeedItem';
   export default {
     data() {
@@ -26,7 +27,7 @@
       }
     },
     components: {
-       Feed, FeedItem
+       Feed, FeedItem,Profile
     }
   }
 </script>

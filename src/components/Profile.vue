@@ -1,5 +1,7 @@
 <template>
-    <Label class="filler" text="Profile Component"/>
+    <StackLayout>
+        <Label class="h2" text="profile page"/>
+    </StackLayout>
 </template>
 
 <script>
