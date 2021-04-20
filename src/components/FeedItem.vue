@@ -2,7 +2,7 @@
     <StackLayout class="post">
         <Label class="title h1" :text="title"/>
         <Label class="title h2" :text="author"/>
-        <VideoPlayer ref="player" src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" autoplay="true" height="300" />
+        <!--<VideoPlayer ref="player" src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" autoplay="true" height="300" />-->
     </StackLayout>
 </template>
 

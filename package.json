@@ -9,6 +9,7 @@
     "@nativescript/core": "^7.0.3",
     "@nativescript/theme": "^2.3.3",
     "faker": "^5.4.0",
+    "nativescript-fontawesome": "^1.0.0",
     "nativescript-gradient": "^2.0.1",
     "nativescript-theme-core": "^2.0.24",
     "nativescript-videoplayer": "^5.0.1",
